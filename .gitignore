@@ -1,0 +1,9 @@
+node_modules
+.env
+.DS_Store
+dist
+.vscode
+backend/node_modules
+frontend/node_modules
+frontend/dist
+google-key.json

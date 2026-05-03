@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinnah Hospital Karachi | React Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- DIALOGFLOW MESSENGER INTEGRATION -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Jinnah AI Assistant"
+      agent-id="f45018b1-8524-4f28-8a24-f8ac056989d5"
+      language-code="en"
+    ></df-messenger>
+
+    <style>
+      df-messenger {
+        --df-messenger-brand-color: #2563eb;
+        --df-messenger-font-color: #ffffff;
+        --df-messenger-chat-background-color: #ffffff;
+        --df-messenger-user-message-background-color: #2563eb;
+        --df-messenger-assistant-message-background-color: #f1f5f9;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        z-index: 9999;
+      }
+    </style>
+  </body>
+</html>
