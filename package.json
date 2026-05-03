@@ -4,7 +4,7 @@
   "scripts": {
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm run dev",
-    "build": "cd frontend && npm install && npm run build"
+    "build": "cd frontend && npm install && npm run build && mv dist ../public"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
